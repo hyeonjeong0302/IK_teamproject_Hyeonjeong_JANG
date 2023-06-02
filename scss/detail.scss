@@ -25,28 +25,23 @@ body {
 font-family: 'Noto Serif', serif;
 font-family: 'Poppins', sans-serif; */
 
-.header {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // right: 0;
+.header_ex {
   width: 100%;
-  // height: 80px;
-  margin: 0 auto;
-  overflow: hidden;
-  z-index: 88;
-  background-color: #fff;
 
-  .wrap {
+  .header {
+    width: 1420px;
+    margin: 0 auto;
     overflow: hidden;
     justify-content: space-around;
     display: flex;
-    height: 80px;
-    line-height: 80px;
+    height: 130px;
+    line-height: 130px;
 
     .logo {
       width: 220px;
       text-align: center;
+      padding-top: 20px;
+      box-sizing: border-box;
 
       img {
         width: 80px;
@@ -56,51 +51,116 @@ font-family: 'Poppins', sans-serif; */
 
     .gnb {
       width: 740px;
+      position: relative;
 
       ul {
+        li {
+          padding: 0 30px;
+          box-sizing: border-box;
+
+          &:hover {
+            font-weight: bold;
+            box-sizing: border-box;
+            cursor: pointer;
+          }
+
+          a {
+            display: block;
+          }
+
+        }
+      }
+
+      .shop {
         display: flex;
         justify-content: space-around;
+      }
 
+    }
+
+    .hidden {
+      display: none;
+
+    }
+
+    .shop_lnb {
+      z-index: 100;
+      width: 435px;
+      height: 820px;
+      background-color: rgb(233, 174, 174);
+      position: absolute;
+      top: 130px;
+      left: 0;
+
+      ul {
         li {
+          //padding-left: 60px;
+          height: 68px;
+          line-height: 68px;
+          box-sizing: border-box;
+
           a {
+            padding-left: 60px;
+            display: block;
+
+            &:hover {
+              font-weight: bold;
+              background-color: #efe8da;
+            }
+          }
+
+          &:first-child {
+            display: flex;
+            padding-left: 0;
+            height: 72px;
+            line-height: 72px;
+            text-align: center;
+            box-sizing: border-box;
+
+            a {
+              padding: 0;
+              display: block;
+              width: calc(435px / 2);
+
+              &:hover {
+                font-weight: bold;
+                background-color: #efe8da;
+              }
+
+            }
+
           }
         }
       }
     }
 
-    .header_right {
-      display: flex;
-      justify-content: space-around;
-      width: 430px;
 
-      .search {
-        position: relative;
+  }
 
-        input {
-          height: 25px;
-          border: none;
-          border-radius: 12px;
-          background-color: #fd8234;
-        }
+  .header_right {
+    display: flex;
+    justify-content: space-around;
+    width: 430px;
 
-        a {
-          position: absolute;
-          right: 7px;
-          top: 3px;
-        }
+    .search {
+      position: relative;
+
+      input {
+        height: 25px;
+        border: none;
+        border-radius: 12px;
+        background-color: #fd8234;
       }
-    }
 
-    .login {
       a {
-      }
-    }
-
-    .join {
-      a {
+        position: absolute;
+        right: 7px;
+        top: 3px;
       }
     }
   }
+
+
 }
 
 .hidden {
@@ -306,8 +366,6 @@ font-family: 'Poppins', sans-serif; */
           }
 
           li.review_tab {
-            .btn {
-            }
 
             .cont {
               overflow: hidden;
@@ -338,9 +396,8 @@ font-family: 'Poppins', sans-serif; */
             }
 
             .cont {
+
               .review {
-                h1 {
-                }
 
                 // 탭
                 .review_image.swiper {
@@ -375,6 +432,8 @@ font-family: 'Poppins', sans-serif; */
                 }
 
                 .review_input {
+                  display: none;
+
                   form {
                     div {
                       width: 50%;
@@ -413,48 +472,124 @@ font-family: 'Poppins', sans-serif; */
                     }
                   }
                 }
+
+                // .review_output_box {
+                //   width: 770px;
+                //   padding: 15px 10px;
+                //   box-sizing: border-box;
+                //   background-color: #efe8da;
+                //   font-size: 13px;
+                //   overflow: hidden;
+                //   .review_output_left {
+                //     margin: 0 auto;
+                //     width: 640px;
+                //     height: 150px;
+                //     float: left;
+                //    // margin-right: 120px;
+
+                //     div {
+                //       &:nth-child(1) {width: 100%;
+                //         overflow: hidden;
+                //         .star_rate {
+                //           float: left;
+                //           color: #222;
+                //         }
+
+                //         .written_id {
+                //           float: left;
+                //           color: #777;
+                //         }
+                //       }
+
+                //       &:nth-child(2) {width: 100%;
+                //         overflow: hidden;
+                //         p {
+                //           float: left;
+                //         }
+                //         .selected_option {
+                //           margin-bottom: 10px;
+                //           color: #777;
+                //           line-height: 18px;
+                //         }
+                //       }
+                //       .written_review{width: 100%;}
+                //     }
+
+                //   }
+
+                //   .review_output_right {
+                //     width: 120px;
+                //     height: 150px;
+                //     float:right;
+
+                //     .date {
+                //       color: #777;
+                //     }
+
+                //     div {
+                //       width: 80px;
+                //       height: 80px;
+
+                //       img {
+                //         width: 100%;
+                //       }
+                //     }
+                //   }
+                // }
                 .review_output_box {
-                  width: 710px;
-                  padding: 15px 10px;
+                  width: 770px;
+                  height: auto;
+                  overflow: hidden;
                   background-color: #efe8da;
-                  font-size: 13px;
+                  margin-bottom: 15px;
+                  padding: 15px 10px;
+                  box-sizing: border-box;
+                  color: #777;
+
                   .review_output_left {
-                    width: 575px;
+                    width: 670px;
+                    height: 120px;
+                    float: left;
+                    text-align-last: left;
+
                     div {
+                      width: 100%;
+
                       &:nth-child(1) {
+                        width: 100%;
+
                         .star_rate {
                           float: left;
+                          margin-right: 10px;
                           color: #222;
                         }
-                        .written_id {
-                          float: left;
-                          color: #777;
-                        }
+
                       }
+
                       &:nth-child(2) {
+                        width: 100%;
+                        margin-bottom: 25px;
+                        overflow: hidden;
+
                         p {
                           float: left;
                         }
                       }
                     }
-
-                    .selected_option {
-                      margin-bottom: 10px;
-                      color: #777;
-                      line-height: 18px;
-                    }
                   }
+
                   .review_output_right {
                     width: 80px;
+                    height: 120px;
+                    float: left;
+
                     .date {
-                      color: #777;
+                      margin-bottom: 15px;
                     }
-                    div {
+
+                    .user_image {
                       width: 80px;
                       height: 80px;
-                      img {
-                        width: 100%;
-                      }
                     }
                   }
                 }
@@ -464,7 +599,7 @@ font-family: 'Poppins', sans-serif; */
 
           li.inquiry_tab {
             .cont {
-              // height: 1150px;
+            
               overflow: hidden;
               display: none;
               position: absolute;
@@ -529,6 +664,7 @@ font-family: 'Poppins', sans-serif; */
     overflow-y: scroll;
 
     .right_top {
+
       // height: auto;
       .product_info {
         height: 210px;
@@ -727,8 +863,7 @@ font-family: 'Poppins', sans-serif; */
             height: 50px;
             text-align: center;
 
-            p {
-            }
+            p {}
           }
         }
 
@@ -893,8 +1028,7 @@ font-family: 'Poppins', sans-serif; */
                       top: -1px;
                     }
 
-                    span {
-                    }
+                    span {}
 
                     .minus {
                       position: relative;
@@ -1051,21 +1185,19 @@ font-family: 'Poppins', sans-serif; */
       display: none;
     }
 
-    #history_btn:checked ~ .history_list {
+    #history_btn:checked~.history_list {
       display: none;
     }
 
-    #history_btn ~ .history_list {
+    #history_btn~.history_list {
       display: block;
     }
 
     label {
-      img {
-      }
+      img {}
     }
 
-    .history_list {
-    }
+    .history_list {}
   }
 
   .top_btn {
@@ -1183,8 +1315,7 @@ font-family: 'Poppins', sans-serif; */
 
         ul {
           li {
-            a {
-            }
+            a {}
           }
         }
       }
@@ -1196,8 +1327,7 @@ font-family: 'Poppins', sans-serif; */
       .footer_contact {
         ul {
           li {
-            a {
-            }
+            a {}
           }
         }
       }
@@ -1207,27 +1337,27 @@ font-family: 'Poppins', sans-serif; */
       width: 370px;
 
       // 이건 내일 다시 보자구요!!!
-      #business_info_btn:checked ~ .business_info_open_btn {
+      #business_info_btn:checked~.business_info_open_btn {
         display: block;
       }
 
-      #business_info_btn:checked ~ .business_info_close_btn {
+      #business_info_btn:checked~.business_info_close_btn {
         display: none;
       }
 
-      #business_info_btn:checked ~ .business_info_detail {
+      #business_info_btn:checked~.business_info_detail {
         display: none;
       }
 
-      #business_info_btn ~ .business_info_close_btn {
+      #business_info_btn~.business_info_close_btn {
         display: block;
       }
 
-      #business_info_btn ~ .business_info_open_btn {
+      #business_info_btn~.business_info_open_btn {
         display: none;
       }
 
-      #business_info_btn ~ .business_info_detail {
+      #business_info_btn~.business_info_detail {
         display: block;
       }
 
@@ -1281,8 +1411,7 @@ font-family: 'Poppins', sans-serif; */
             }
           }
 
-          p:last-child {
-          }
+          p:last-child {}
 
           overflow: hidden;
         }
@@ -1290,13 +1419,11 @@ font-family: 'Poppins', sans-serif; */
         .detail_second {
           margin-bottom: 2px;
 
-          p {
-          }
+          p {}
         }
 
         .detail_third,
-        .detail_fourth {
-        }
+        .detail_fourth {}
       }
     }
   }

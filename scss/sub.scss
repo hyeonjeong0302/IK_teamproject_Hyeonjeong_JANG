@@ -25,23 +25,23 @@ body {
 font-family: 'Noto Serif', serif;
 font-family: 'Poppins', sans-serif; */
 
-.header {
+.header_ex {
   width: 100%;
-  margin: 0 auto;
-  border-bottom: 1px solid #f1f1f1;
 
-  .wrap {
+  .header {
     width: 1420px;
     margin: 0 auto;
     overflow: hidden;
     justify-content: space-around;
     display: flex;
-    height: 80px;
-    line-height: 80px;
+    height: 130px;
+    line-height: 130px;
 
     .logo {
       width: 220px;
       text-align: center;
+      padding-top: 20px;
+      box-sizing: border-box;
 
       img {
         width: 80px;
@@ -51,43 +51,121 @@ font-family: 'Poppins', sans-serif; */
 
     .gnb {
       width: 740px;
+      position: relative;
 
       ul {
+        li {
+          padding: 0 30px;
+          box-sizing: border-box;
+
+          &:hover {
+            font-weight: bold;
+            box-sizing: border-box;
+            cursor: pointer;
+          }
+
+          a {
+            display: block;
+          }
+
+        }
+      }
+
+      .shop {
         display: flex;
         justify-content: space-around;
       }
+
     }
 
-    .header_right {
-      display: flex;
-      justify-content: space-around;
-      width: 430px;
+    .hidden {
+      display: none;
 
-      .search {
-        position: relative;
-        input {
-          height: 25px;
-          border: none;
-          border-radius: 12px;
-          background-color: #fd8234;
+    }
+
+    .shop_lnb {
+      z-index: 100;
+      width: 435px;
+      height: 820px;
+      background-color: rgb(233, 174, 174);
+      position: absolute;
+      top: 130px;
+      left: 0;
+
+      ul {
+        li {
+          //padding-left: 60px;
+          height: 68px;
+          line-height: 68px;
+          box-sizing: border-box;
+
+          a {
+            padding-left: 60px;
+            display: block;
+
+            &:hover {
+              font-weight: bold;
+              background-color: #efe8da;
+            }
+          }
+
+          &:first-child {
+            display: flex;
+            padding-left: 0;
+            height: 72px;
+            line-height: 72px;
+            text-align: center;
+            box-sizing: border-box;
+
+            a {
+              padding: 0;
+              display: block;
+              width: calc(435px / 2);
+
+              &:hover {
+                font-weight: bold;
+                background-color: #efe8da;
+              }
+
+            }
+
+          }
         }
-        a {
-          position: absolute;
-          right: 7px;
-          top: 3px;
-        }
       }
     }
 
-    .login {
-      a {
-      }
-    }
 
-    .join {
+  }
+
+  .header_right {
+    display: flex;
+    justify-content: space-around;
+    width: 430px;
+
+    .search {
+      position: relative;
+
+      input {
+        height: 25px;
+        border: none;
+        border-radius: 12px;
+        background-color: #fd8234;
+      }
+
       a {
+        position: absolute;
+        right: 7px;
+        top: 3px;
       }
     }
+  }
+
+  .login {
+    a {}
+  }
+
+  .join {
+    a {}
   }
 }
 
@@ -136,7 +214,7 @@ font-family: 'Poppins', sans-serif; */
 }
 
 .menu_icon_ex {
-  // 마음을 가다듬도 다시 해보자!
+  // 마음을 가다듬고 다시 해보자!
   margin: 0 auto;
   width: 100%;
   height: 190px;
@@ -154,6 +232,7 @@ font-family: 'Poppins', sans-serif; */
 
     div {
       width: 100px;
+
       float: left;
       // margin: 30px 0;
       margin-right: 20px;
@@ -161,13 +240,19 @@ font-family: 'Poppins', sans-serif; */
       a {
         img {
           width: 100%;
+          border-radius: 50%;
           // height: 100px;
+          margin-bottom: 10px;
         }
 
         p {
           font-size: 12px;
           text-align: center;
         }
+      }
+
+      &:hover a p {
+        font-weight: bold;
       }
     }
 
@@ -283,14 +368,17 @@ font-family: 'Poppins', sans-serif; */
 
     overflow: hidden;
   }
+
   // 페이지네이션
 
   .pagination_container {
     display: flex;
     justify-content: center;
     margin: 60px 0 100px 0;
+
     div {
       margin: 0 5px;
+
       span {
         margin: 0 5px;
       }
@@ -331,11 +419,11 @@ font-family: 'Poppins', sans-serif; */
       display: none;
     }
 
-    #history_btn:checked ~ .history_list {
+    #history_btn:checked~.history_list {
       display: none;
     }
 
-    #history_btn ~ .history_list {
+    #history_btn~.history_list {
       display: block;
     }
 
@@ -426,8 +514,7 @@ font-family: 'Poppins', sans-serif; */
   }
 
   .top_btn {
-    img {
-    }
+    img {}
   }
 
   .history_list {
@@ -543,8 +630,7 @@ font-family: 'Poppins', sans-serif; */
 
         ul {
           li {
-            a {
-            }
+            a {}
           }
         }
       }
@@ -556,8 +642,7 @@ font-family: 'Poppins', sans-serif; */
       .footer_contact {
         ul {
           li {
-            a {
-            }
+            a {}
           }
         }
       }
@@ -567,27 +652,27 @@ font-family: 'Poppins', sans-serif; */
       width: 370px;
 
       // 이건 내일 다시 보자구요!!!
-      #business_info_btn:checked ~ .business_info_open_btn {
+      #business_info_btn:checked~.business_info_open_btn {
         display: block;
       }
 
-      #business_info_btn:checked ~ .business_info_close_btn {
+      #business_info_btn:checked~.business_info_close_btn {
         display: none;
       }
 
-      #business_info_btn:checked ~ .business_info_detail {
+      #business_info_btn:checked~.business_info_detail {
         display: none;
       }
 
-      #business_info_btn ~ .business_info_close_btn {
+      #business_info_btn~.business_info_close_btn {
         display: block;
       }
 
-      #business_info_btn ~ .business_info_open_btn {
+      #business_info_btn~.business_info_open_btn {
         display: none;
       }
 
-      #business_info_btn ~ .business_info_detail {
+      #business_info_btn~.business_info_detail {
         display: block;
       }
 
@@ -641,8 +726,7 @@ font-family: 'Poppins', sans-serif; */
             }
           }
 
-          p:last-child {
-          }
+          p:last-child {}
 
           overflow: hidden;
         }
@@ -650,13 +734,11 @@ font-family: 'Poppins', sans-serif; */
         .detail_second {
           margin-bottom: 2px;
 
-          p {
-          }
+          p {}
         }
 
         .detail_third,
-        .detail_fourth {
-        }
+        .detail_fourth {}
       }
     }
   }
