@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ----------------------------------popup------------------------------------ */
+#popup_chk {
+  display: none;
+}
+
+/* 체크박스 사라짐. */
+#popup_chk:checked~.popup {
+  display: block;
+}
+
+#popup_chk~.popup {
+  display: none;
+}
+
+/* 팝업 체크되었을 때 보이고, 안 되었을 때 안 보이게 해라 이 말이다. 
+~: 아이디에 해당하는 태그의 형제(같은레벨)들 중에서 아래에 있는(동생) 태그
+여기서는 #popup_chk의 형제들 중 아래쪽 형제라는 뜻
+그래서 input를 label보다 위에 써줘야 한다. */
+
+.popup {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  padding: 10px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.popup p {
+  width: 300px;
+  height: 250px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.popup .popup_close {
+  margin-left: 280px;
+  /* tac안먹히고 mt도 안 먹힘
+  디스플레이 블록으로 해서 하면 됨. */
+  margin-top: 20px;
+
+}
+
+
+/* ------------------------lnb_01------------------------- */
+.lnb_01,
+.lnb_02,
+.lnb_03,
+.lnb_04 {
+  width: 1000px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.lnb_01 li {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.lnb_01 li:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+
+/* ------------------------lnb_02------------------------- */
+.lnb_02 li {
+  width: 200px;
+  height: 50px;
+  float: left;
+}
+
+.lnb_02 li a {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.lnb_02 li a:hover {
+  color: black;
+  background-color: #ccc;
+}
+
+
+/* ------------------------lnb_03------------------------- */
+.lnb_03 ul {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s 0.2s;
+}
+
+.lnb_03:hover ul {
+  height: 200px;
+}
+
+.lnb_03 li {
+  width: 200px;
+  height: 50px;
+  float: left;
+}
+
+.lnb_03 li a {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  transition: all 0.5s;
+}
+
+.lnb_03>li>a:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+각각 떨어지게
+
+/* --------------------------------lnb_04------------------------------------ */
+.lnb_04 ul {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s 0.2s;
+}
+
+.lnb_04:hover ul {
+  height: 200px;
+}
+
+.lnb_04 li {
+  width: 200px;
+  height: 50px;
+  float: left;
+}
+
+.lnb_04 li a {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  transition: all 0.5s;
+}
+
+.lnb_04>li>a:hover {
+  background-color: #ccc;
+  color: black;
+}
+가로메뉴 만들기 각각 떨어지게
+/* ----------------------------------lnb_05------------------------------------ */
+
+
+
+가로메뉴 만들기

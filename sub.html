@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>베스트 상품</title>
+    <link
+      rel="shortcut icon"
+      href="./images/logo_favicon.png"
+      type="image/x-icon"
+    />
+    <!-- <script src="./js/jquery-3.6.4.min.js"></script> -->
+    <link rel="stylesheet" href="./scss/sub.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="module" src="./js/sub.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {});
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrap">
+        <div class="logo">
+          <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
+        </div>
+        <!--logo-->
+        <div class="gnb popins">
+          <ul>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">OUR STORY</a></li>
+            <li><a href="#">SPECIAL PROJECT</a></li>
+            <li><a href="#">SUPPORT</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <!--gnb-->
+        <div class="header_right">
+          <div class="search">
+            <input type="search" />
+            <a href="#"><img src="./images/search.png" alt="" /></a>
+          </div>
+          <div class="login">
+            <a href="./login.html">로그인</a>
+          </div>
+
+          <div class="join"><a href="./terms.html">회원가입</a></div>
+        </div>
+        <!--header_right-->
+      </div>
+      <!--wrap-->
+    </header>
+    <!--header-->
+    <div class="path">
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="#none">></a></li>
+        <li><a href="#none">SHOP</a></li>
+        <li><a href="#none">></a></li>
+        <li><a href="#none">IK 시리즈</a></li>
+      </ul>
+    </div>
+    <div class="menu_icon_ex">
+      <div class="menu_icon">
+        <div>
+          <a href="./sub.html"
+            ><img src="./images/menu_icon_01.png" alt="menu_icon_01" />
+            <p>ALL</p>
+          </a>
+        </div>
+        <div>
+          <a href="./sub.html"
+            ><img src="./images/menu_icon_02.png" alt="menu_icon_02" />
+            <p>IK 테이블 스탠드</p>
+          </a>
+        </div>
+        <div>
+          <a href="./sub.html"
+            ><img src="./images/menu_icon_03.png" alt="menu_icon_03" />
+            <p>IK 플로어 스탠드</p>
+          </a>
+        </div>
+        <div>
+          <a href="./sub.html"
+            ><img src="./images/menu_icon_04.png" alt="menu_icon_04" />
+            <p>IK 팬던트</p>
+          </a>
+        </div>
+        <div>
+          <a href="./sub.html"
+            ><img src="./images/menu_icon_05.png" alt="menu_icon_05" />
+            <p>클래식 전구</p>
+          </a>
+        </div>
+        <div>
+          <a href="./sub.html"
+            ><img src="./images/menu_icon_06.png" alt="menu_icon_06" />
+            <p>장식용 전구</p>
+          </a>
+        </div>
+        <div>
+          <a href="./sub.html"
+            ><img src="./images/menu_icon_07.png" alt="menu_icon_07" />
+            <p>삼파장 전구</p>
+          </a>
+        </div>
+        <div>
+          <a href="./sub.html"
+            ><img src="./images/menu_icon_08.png" alt="menu_icon_08" />
+            <p>가드닝 전구</p>
+          </a>
+        </div>
+        <div>
+          <a href="./sub.html"
+            ><img src="./images/menu_icon_09.png" alt="menu_icon_09" />
+            <p>할로겐 전구</p>
+          </a>
+        </div>
+        <div>
+          <a href="./sub.html"
+            ><img src="./images/menu_icon_10.png" alt="menu_icon_10" />
+            <p>산업용 전구</p>
+          </a>
+        </div>
+        <div>
+          <a href="./sub.html"
+            ><img src="./images/menu_icon_11.png" alt="menu_icon_11" />
+            <p>크립톤 전구</p>
+          </a>
+        </div>
+        <div>
+          <a href="./sub.html"
+            ><img src="./images/menu_icon_12.png" alt="menu_icon_12" />
+            <p>LED전구</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--menu_icon-->
+
+    <!-- 동적 데이터는 서버가 구동되어야 보임. 윈도우에서 더블 클릭 실행 시 정적 데이터만 보이게 됨  -->
+    <div class="product_wrap">
+      <div class="product_title">
+        <h2>IK 시리즈</h2>
+        <select name="sort_select" class="sort_select">
+          <option>ALL</option>
+          <option>BEST 상품</option>
+          <option>가나다순</option>
+          <option>낮은 가격순</option>
+          <option>높은 가격순</option>
+        </select>
+      </div>
+      <section class="best_product"></section>
+      <div class="pagination_container">
+        <div class="prev_button"><i class="fas fa-angle-left"></i></div>
+        <div class="number_button_wrapper">
+          <span class="number_button">1</span>
+        </div>
+        <div class="next_button"><i class="fas fa-angle-right"></i></div>
+      </div>
+    </div>
+
+    <div class="quick">
+      <div class="shopping_history">
+        <input type="checkbox" id="history_btn" checked />
+        <label for="history_btn" class="history_icon"
+          ><img src="./images/history.png" alt="history"
+        /></label>
+        <!-- <label for="history_btn" class="close_btn"><img src="./images/close_btn.png" alt="close_btn"></label> -->
+        <div class="history_list">
+          <h3>SHOOPPING HISTORY</h3>
+
+          <p>TODAY</p>
+
+          <div class="select_product">
+            <div class="product_detail_box">
+              <img src="./images/sub_01.jpg" alt="" />
+              <div>
+                <p>상품명sdgfsgrgf</p>
+                <b>가격</b>
+              </div>
+              <input type="checkbox" id="delete01" />
+              <label for="delete01" class="delete01"
+                ><img src="./images/close_btn.png" alt="delete_btn"
+              /></label>
+            </div>
+            <div class="product_detail_box">
+              <img src="./images/sub_01.jpg" alt="" />
+              <div>
+                <p>상품명gfdgdgf</p>
+                <b>가격</b>
+              </div>
+              <input type="checkbox" id="delete02" />
+              <label for="delete02" class="delete02"
+                ><img src="./images/close_btn.png" alt="delete_btn"
+              /></label>
+            </div>
+            <div class="product_detail_box">
+              <img src="./images/sub_01.jpg" alt="" />
+              <div>
+                <p>상품명</p>
+                <b>가격</b>
+              </div>
+              <input type="checkbox" id="delete03" />
+              <label for="delete03" class="delete03"
+                ><img src="./images/close_btn.png" alt="delete_btn"
+              /></label>
+            </div>
+          </div>
+          <input type="checkbox" id="delete_all" checked />
+          <label for="delete_all" class="delete_all">전체 삭제</label>
+          <!--select_prodect-->
+        </div>
+        <!--shopping_history-->
+      </div>
+      <div class="top_btn">
+        <a href="#"><img src="./images/top.png" alt="top" /></a>
+      </div>
+    </div>
+    <!--quick-->
+    <footer class="footer">
+      <div class="footer_left">
+        <p>CE CENTER</p>
+        <strong>053-581-1079</strong>
+        <p>08:00~17:00 | 주말 및 공휴일 휴무</p>
+        <div class="footer_logo">
+          <img src="./images/logo_white.png" alt="" />
+        </div>
+        <div class="copyright">© 2023 Ilkwang Co., Ltd All right reserved.</div>
+      </div>
+      <!--footer_left-->
+      <div class="footer_right">
+        <div class="footer_instagram"><i class="fab fa-instagram"></i></div>
+        <div class="footer_right_middle">
+          <div class="footer_info">
+            <ul>
+              <li><a href="#!">INFO</a></li>
+              <li><a href="#!">공지사항</a></li>
+              <li><a href="#!">자주 묻는 질문</a></li>
+              <li><a href="#!">이용약관</a></li>
+              <li><a href="#!">개인정보 취급방침</a></li>
+            </ul>
+          </div>
+          <!--footer_info-->
+          <div class="footer_support">
+            <ul>
+              <li><a href="#!">SUPPORT</a></li>
+              <li><a href="#">제품 가이드</a></li>
+              <li><a href="#">뉴스</a></li>
+              <li><a href="#">브로슈어</a></li>
+            </ul>
+          </div>
+          <!--footer_support-->
+          <div class="footer_contact">
+            <ul>
+              <li><a href="#!"> INFO</a></li>
+              <li><a href="#">문의하기</a></li>
+              <li><a href="#">매장안내</a></li>
+            </ul>
+          </div>
+          <!--footer_contact-->
+        </div>
+        <!--footer_right_middle-->
+        <div class="business_info">
+          <input type="checkbox" id="business_info_btn" checked />
+          <label for="business_info_btn" class="business_info_open_btn"
+            >(주)일광 사업자 정보 <i class="fas fa-chevron-down"></i
+          ></label>
+          <label for="business_info_btn" class="business_info_close_btn"
+            >(주)일광 사업자 정보 <i class="fas fa-chevron-up"></i
+          ></label>
+          <div class="business_info_detail">
+            <div class="detail_first">
+              <p>일광로틱</p>
+              <p class="bar"></p>
+              <p>대표 김홍도</p>
+              <p class="bar"></p>
+              <p>사업자등록번호 510-05-40260</p>
+              <p><a href="#">[사업자정보확인]</a></p>
+            </div>
+            <!--detail_first-->
+            <div class="detail_second">
+              <p>통신판매신고번호 2013-경북성주-34호</p>
+            </div>
+            <!--detail_second-->
+            <div class="detail_third">
+              <p>경상북도 성주군 선남면 문방1길 1</p>
+              <p class="bar"></p>
+              <p>전화 053-581-1079</p>
+            </div>
+            <!--detail_third-->
+            <div class="detail_fourth">
+              <p>팩스 053-581-6122</p>
+              <p class="bar"></p>
+
+              <p>개인정보책임자 김홍도</p>
+            </div>
+            <!--detail_fourth-->
+          </div>
+          <!--business_info_detail-->
+        </div>
+        <!--business info-->
+      </div>
+      <!--footer_right-->
+    </footer>
+    <!--footer-->
+  </body>
+</html>

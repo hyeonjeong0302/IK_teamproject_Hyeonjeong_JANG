@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.join_ex {
+  width: 100vw;
+  height: 100vh;
+  background-color: #efe8da;
+}
+
+.join {
+  width: 460px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    padding: 30px 0;
+  }
+  p {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  form {
+    ul {
+      width: 100%;
+
+      li {
+        margin-bottom: 15px;
+
+        input {
+          height: 30px;
+          box-sizing: border-box;
+          border: none;
+          border-bottom: 1px solid black;
+          background-color: #efe8da;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .box {
+          height: 30px;
+          border: none;
+          border-bottom: 1px solid black;
+          background-color: #efe8da;
+        }
+      }
+
+      //이메일
+      .email_li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .title {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        #user_email {
+          width: 50%;
+        }
+
+        .box {
+          width: calc((100% - 50% - 41px) / 2);
+        }
+
+        .select {
+          width: calc((100% - 50% - 41px) / 2);
+          // float: right;
+        }
+      }
+
+      .password_li {
+        .title {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        #user_pw1,
+        #user_pw2 {
+          width: 460px;
+        }
+
+        .pw_btn {
+          margin-top: 5px;
+        }
+      }
+
+      .name_li {
+        #user_name {
+          width: 100%;
+        }
+      }
+
+      .birth_li {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .title {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .box {
+          width: 146px;
+          margin-right: 5px;
+        }
+
+        .box:nth-child(3) {
+          margin-right: 0;
+        }
+      }
+
+      .tel_li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .title {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        #tel_first,
+        #tel_second,
+        #tel_third {
+          height: 30px;
+          width: 30%;
+          text-align: center;
+          border: none;
+          border-bottom: 1px solid black;
+          background-color: #efe8da;
+        }
+      }
+
+      .addr_li {
+        .post_code {
+          #sample4_postcode {
+            width: 100px;
+          }
+          .search_btn {
+            width: 100px;
+          }
+          .search_btn:hover {
+            font-weight: bold;
+          }
+        }
+
+        .address {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          #sample4_roadAddress,
+          #sample4_jibunAddress,
+          #sample4_detailAddress,
+          #sample4_extraAddress {
+            width: 49%;
+          }
+        }
+
+        label.title {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        input {
+          width: 49%;
+          margin-bottom: 10px;
+        }
+
+        input#sample4_postcode {
+          width: 25%;
+          margin-right: 10px;
+        }
+
+        // input.search_btn {
+        //   width: 25%;
+        // }
+      }
+    }
+
+    .join_btn {
+      width: 100%;
+      height: 60px;
+      background-color: #fd8234;
+      text-align: center;
+      line-height: 60px;
+      margin: 50px 0;
+    }
+
+    .join_btn:hover {
+      font-weight: bold;
+    }
+
+    a {
+      display: block;
+    }
+  }
+}

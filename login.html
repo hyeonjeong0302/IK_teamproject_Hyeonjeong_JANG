@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <!-- jQuery cdn -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/login.js" defer></script>
+    <link rel="stylesheet" href="./scss/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="login_ex">
+
+        <div class="login">
+            <h1>로그인</h1>
+            <form class="login_form">
+                <label class="title" for="login_email">이메일 주소</label>
+                <input id="login_email" class="login_text" type="text" name="id" placeholder=" 이메일 주소를 입력해 주세요.">
+                <label class="title" for="login_pw">비밀번호</label>
+                <input id="login_pw" class="login_text" type="password" name="id" placeholder=" 비밀번호를 입력해 주세요.">
+                <input type="checkbox" id="id_save">
+                <label for="id_save">아이디 저장</label>
+
+                <div class="basic_login">
+
+                    <button id="login_btn" class="login_btn" type="button" disabled>로그인</button>
+                    <!-- 로그인 성공 시 어떻게 보여줄지 생각 중 <a href="./index.html">로그인</a>이걸 하면 제대로 안 해도 기냥 메인감 -->
+                    <div class="join_btn"><a href="./terms.html">회원가입</a></div>
+                    <div class="non_members_btn"><a href="#">비회원 주문조회</a></div>
+                </div>
+                <div class="find">
+                    <a class="find_id" href="#">아이디 찾기</a>
+                    <a class="find_pw" href="#">비밀번호 찾기</a>
+
+                </div>
+                <div class="easy_login">
+                    <div class="naver_easy"><a href="#"><img src="./images/naver-login-logo.png" alt="naver"> 네이버
+                            로그인</a></div>
+                    <div class="kakao_easy"><a href="#"><img src="./images/kakao-login-logo.png" alt="kakao"> 카카오
+                            로그인</a></div>
+                    <div class="google_easy"><a href="#"><img src="./images/google-login-logo.png" alt="google"> 구글
+                            로그인</a></div>
+
+                </div>
+                <!--easy_login-->
+            </form>
+        </div>
+        <!--login-->
+        <div class="login_info">
+            <h3>이메일주소</h3>
+            <p>green@gmail.com</p>
+            <p>green@naver.com</p>
+            <p>green@hanmail.net</p>
+            <br>
+            <h3>비밀번호(모두 동일)</h3>
+            <p>green1234</p>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

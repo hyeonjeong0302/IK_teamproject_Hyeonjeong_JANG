@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.wrap {
+  width: 1420px;
+  margin: 0 auto;
+}
+
+.issue_contents .tab_menu {
+  position: relative;
+}
+.issue_contents .tab_menu .list {
+  overflow: hidden;
+}
+.issue_contents .tab_menu .list li {
+  width: 25%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  float: left;
+}
+.issue_contents .tab_menu .list li .btn {
+  font-size: 13px;
+}
+.issue_contents .tab_menu .list li .cont {
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #f7f7f7;
+  width: 820px;
+  padding: 45px 35px;
+  box-sizing: border-box;
+}
+.issue_contents .tab_menu .list li .cont h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.issue_contents .tab_menu .list li .cont p {
+  font-size: 14px;
+  line-height: normal;
+  line-height: 24px;
+}
+.issue_contents .tab_menu .list li.notice_tab .cont {
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.issue_contents .tab_menu .list li.notice_tab .cont h1 {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 3px solid #000;
+}
+.issue_contents .tab_menu .list li.notice_tab .cont p {
+  text-align: left;
+}
+.issue_contents .tab_menu .list li.is_on {
+  border-bottom: 5px solid #261c13;
+  box-sizing: border-box;
+}
+.issue_contents .tab_menu .list li.is_on .btn {
+  font-weight: bold;
+}
+.issue_contents .tab_menu .list li.is_on .cont {
+  display: block;
+}
+.issue_contents .tab_menu .list li.is_on .cont img {
+  width: 100%;
+}/*# sourceMappingURL=issue.css.map */

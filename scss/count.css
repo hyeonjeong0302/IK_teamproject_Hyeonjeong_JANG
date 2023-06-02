@@ -1,0 +1,45 @@
+#background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 100%;
+  background-color: red;
+  z-index: 1;
+}
+
+body {
+  color: #ffffff;
+  width: 50%;
+  min-height: 100%;
+  float: right;
+  background-color: blue;
+}
+
+#left_col {
+  float: left;
+  width: 100%;
+  margin-left: -100%;
+  text-align: center;
+  background-color: green;
+}
+
+#left_col_inner {
+  padding: 10px;
+  color: #ffffff;
+}
+
+#content {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+#right_col_inner {
+  padding-left: 20px;
+  color: #ffffff;
+  text-align: center;
+}/*# sourceMappingURL=count.css.map */

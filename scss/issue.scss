@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.wrap {
+  width: 1420px;
+  margin: 0 auto;
+}
+
+//탭
+.issue_contents {
+  .tab_menu {
+    position: relative;
+
+    .list {
+      overflow: hidden;
+
+      li {
+        width: 25%;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        float: left;
+        // margin-right: 14px;
+        .btn {
+          font-size: 13px;
+        }
+        .cont {
+          // height: 1150px;
+          overflow: hidden;
+          display: none;
+          position: absolute;
+          left: 0;
+          background-color: #f7f7f7;
+          // color: #fff;
+          // text-align: center;
+          width: 820px;
+          // height: 100px;
+          // line-height: 100px;
+          padding: 45px 35px;
+          box-sizing: border-box;
+          h1 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 14px;
+            line-height: normal;
+            line-height: 24px;
+          }
+        }
+      }
+      li.notice_tab {
+        .cont {
+          text-align-last: left;
+          h1 {
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 3px solid #000;
+          }
+          p {
+            text-align: left;
+          }
+        }
+      }
+      li.is_on {
+        border-bottom: 5px solid #261c13;
+        box-sizing: border-box;
+
+        .btn {
+          font-weight: bold;
+        }
+
+        .cont {
+          display: block;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
