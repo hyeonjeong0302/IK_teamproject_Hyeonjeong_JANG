@@ -1,3 +1,5 @@
+
+
 // 상품 데이터 베이스
 import shoppingList from "./data.js";
 

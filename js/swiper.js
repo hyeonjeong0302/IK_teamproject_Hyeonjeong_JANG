@@ -36,21 +36,29 @@ var new_swiper = new Swiper(".new", {
 
 // best
 
-var best_swiper = new Swiper(".best", {
+let swiper = new Swiper( '.best.swiper-container.two', {
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  effect: 'coverflow',
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  pauseOnMouseEnter:'true',
+  coverflow: {
+    rotate: 0,
+    stretch: 100,
+    depth: 150,
+    modifier: 1.5,
+    slideShadows : false,
+  },
+  autoplay: {
+    delay: 2000,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  slidesPerView: 3,
-  loop: true,
-  // autoplay: {
-  //   delay: 2000,
-  // },
-});
-
-//instagram
-
-//sub_page
+} );
 
 //detail_page
 

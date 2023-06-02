@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>메인 - 일광전구</title>
+ 
+  <link rel="shortcut icon" href="./images/logo_favicon.png" type="image/x-icon" />
+  <!-- <script src="./js/jquery-3.6.4.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons" />
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Serif', serif;
+  font-family: 'Poppins', sans-serif; */
+.header_ex {
+  width: 100%;
+}
+.header_ex .header {
+  width: 1420px;
+  margin: 0 auto;
+  overflow: hidden;
+  justify-content: space-around;
+  display: flex;
+  height: 130px;
+  line-height: 130px;
+}
+.header_ex .header .logo {
+  width: 220px;
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.header_ex .header .logo img {
+  width: 80px;
+  height: 80px;
+}
+.header_ex .header .gnb {
+  width: 740px;
+  position: relative;
+}
+.header_ex .header .gnb ul li {
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.header_ex .header .gnb ul li:hover {
+  font-weight: bold;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.header_ex .header .gnb ul li a {
+  display: block;
+}
+.header_ex .header .gnb .shop {
+  display: flex;
+  justify-content: space-around;
+}
+.header_ex .header .hidden {
+  display: none;
+}
+.header_ex .header .shop_lnb {
+  z-index: 100;
+  width: 435px;
+  height: 820px;
+  background-color: rgb(233, 174, 174);
+  position: absolute;
+  top: 130px;
+  left: 0;
+}
+.header_ex .header .shop_lnb ul li {
+  height: 68px;
+  line-height: 68px;
+  box-sizing: border-box;
+}
+.header_ex .header .shop_lnb ul li a {
+  padding-left: 60px;
+  display: block;
+}
+.header_ex .header .shop_lnb ul li a:hover {
+  font-weight: bold;
+  background-color: #efe8da;
+}
+.header_ex .header .shop_lnb ul li:first-child {
+  display: flex;
+  padding-left: 0;
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.header_ex .header .shop_lnb ul li:first-child a {
+  padding: 0;
+  display: block;
+  width: 217.5px;
+}
+.header_ex .header .shop_lnb ul li:first-child a:hover {
+  font-weight: bold;
+  background-color: #efe8da;
+}
+.header_ex .header_right {
+  display: flex;
+  justify-content: space-around;
+  width: 430px;
+}
+.header_ex .header_right .search {
+  position: relative;
+}
+.header_ex .header_right .search input {
+  height: 25px;
+  border: none;
+  border-radius: 12px;
+  background-color: #fd8234;
+}
+.header_ex .header_right .search a {
+  position: absolute;
+  right: 7px;
+  top: 3px;
+}
+  </style>
+</head>
+
+<body>
+  <header class="header_ex">
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
+      </div>
+      <!--logo-->
+      <div class="gnb popins">
+        <ul class="shop">
+          <li id="gnb_shop"><a href="./sub.html">SHOP</a></li>
+          <li><a href="./sub.html">OUR STORY</a></li>
+          <li><a href="./sub.html">SPECIAL PROJECT</a></li>
+          <li><a href="./sub.html">SUPPORT</a></li>
+          <li><a href="./sub.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="shop_lnb hidden" id="shop_lnb">
+        <ul>
+          <li class="first_li">
+            <a href="#">NEW</a><a href="#">IK IDEA</a>
+          </li>
+          <li><a href="./sub.html">IK 테이블 스탠드</a></li>
+          <li><a href="./sub.html">IK 플로어 스탠드</a></li>
+          <li><a href="./sub.html">IK 팬던트</a></li>
+          <li><a href="./sub.html">클래식전구</a></li>
+          <li><a href="./sub.html">장식용전구</a></li>
+          <li><a href="./sub.html">삼파장전구</a></li>
+          <li><a href="./sub.html">가드닝전구</a></li>
+          <li><a href="./sub.html">할로겐전구</a></li>
+          <li><a href="./sub.html">산업용전구</a></li>
+          <li><a href="./sub.html">크립톤전구</a></li>
+          <li><a href="./sub.html">LED전구</a></li>
+        </ul>
+      </div>
+      <!--gnb-->
+      <div class="header_right">
+        <div class="search">
+          <input type="search" />
+          <a href="#"><img src="./images/search.png" alt="" /></a>
+        </div>
+        <div class="login">
+          <a href="./login.html">로그인</a>
+        </div>
+
+        <div class="join"><a href="./terms.html">회원가입</a></div>
+      </div>
+      <!--header_right-->
+    </div>
+    <!--wrap-->
+  </header>
+  <!--header-->
+  <script>
+    //메뉴호버하면 엘엔비 생기게! 이제는 애니메이션이 되게!!! 그러나 너무 한 술에 모든 것을 하려 하면 욕심이지. 나중에 하겠어.
+//샵 메뉴에
+document.getElementById('gnb_shop').addEventListener('mouseover', function(){
+  document.getElementById('shop_lnb').classList.remove('hidden')
+})
+document.getElementById('gnb_shop').addEventListener('mouseout', function(){
+  document.getElementById('shop_lnb').classList.add('hidden')
+})
+
+// 호버되어서 나타난 메뉴 자체에
+// document.getElementById('shop_lnb').addEventListener('mouseover', function(){
+//   document.getElementById('shop_lnb').classList.remove('hidden')
+// })
+// document.getElementById('shop_lnb').addEventListener('mouseout', function(){
+//   document.getElementById('shop_lnb').classList.add('hidden')
+// })
+//issue_contents
+  </script>
+ </body>
+
+</html>

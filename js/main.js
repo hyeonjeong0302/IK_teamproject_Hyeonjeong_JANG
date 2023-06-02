@@ -1,4 +1,4 @@
-//메뉴호버하면 엘엔비 생기게! 이제는 애니메이션이 되게!!! 그러나 너무 한 술에 모든 것을 하려 하면 욕심이지. 나중에 하겠어.
+/* //메뉴호버하면 엘엔비 생기게! 이제는 애니메이션이 되게!!! 그러나 너무 한 술에 모든 것을 하려 하면 욕심이지. 나중에 하겠어.
 //샵 메뉴에
 document.getElementById('gnb_shop').addEventListener('mouseover', function(){
   document.getElementById('shop_lnb').classList.remove('hidden')
@@ -14,7 +14,8 @@ document.getElementById('gnb_shop').addEventListener('mouseout', function(){
 // document.getElementById('shop_lnb').addEventListener('mouseout', function(){
 //   document.getElementById('shop_lnb').classList.add('hidden')
 // })
-//issue_contents
+//issue_contents */
+
 // 바깥 탭
 const issueTabList = document.querySelectorAll(
   ".issue_contents .issue_list li"
